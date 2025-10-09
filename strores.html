@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,99 +14,18 @@
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
     />
-    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="css/shared.css" />
+
     <title>Рестораны в Москве</title>
   </head>
 
   <body>
-    <header>
-      <div class="content row between-xs middle-xs">
-        <div class="col-xs-6">
-          <a href="#"><img src="images/logo.svg" alt="Логотип" /></a>
-        </div>
+    <div id="header"></div>
 
-        <div class="col-xs-6 end-xs base">
-          <button class="me-sm-0 me-md-0">Войти</button>
-          <a class="basket hidden-xs hidden-sm hidden-md" href="#"
-            ><img src="images/basket.svg" alt="Корзина"
-          /></a>
-        </div>
-      </div>
-    </header>
+    <main class="placeholder" style="height: 500px">placeholder</main>
 
-    <div class="placeholder" style="height: 500px">placeholder</div>
+    <div id="footer"></div>
 
-    <footer>
-      <div class="content">
-        <a href="#"><img src="images/white-logo.svg" alt="Логотип2" /></a>
-        <hr />
-      </div>
-
-      <div class="content">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="select-wrapper">
-              <img src="images/za-warudo.svg" alt="" class="icon-left" />
-              <select class="language-select">
-                <option>Русский</option>
-              </select>
-              <img src="images/arrow-down.svg" alt="" class="icon-right" />
-            </div>
-            <div class="socials">
-              <div class="hashtag">
-                <p>#</p>
-                <a href="#">UberEats</a>
-              </div>
-              <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
-              <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
-              <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 row">
-            <a class="col-12" href="#">Об UberEats</a>
-            <a class="col-12" href="#">Станьте партнёром по доставке</a>
-            <a class="col-12" href="#">Станьте партнёром-рестораном</a>
-          </div>
-
-          <div class="col-lg-4 row">
-            <a class="col-12" href="#">Все города</a>
-            <a class="col-12" href="#">Цены</a>
-            <a class="col-12" href="#">Помощь</a>
-            <a class="col-12" href="#">FAQs</a>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="apps row">
-          <a href="#"><img src="images/app-store.png" alt="AppStore" /></a>
-          <a href="#"><img src="images/google-play.png" alt="GooglePlay" /></a>
-        </div>
-
-        <hr />
-
-        <div class="documents row">
-          <div class="col-lg-4">
-            &copy; 2017 Uber Technologies Inc.
-          </div>
-          <div class="col-lg-4">
-            <a href="#">Обработка персональных данных</a>
-          </div>
-          <div class="col-lg-4">
-            <a href="#">Пользовательское соглашение</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script src="js/load-parts.js"></script>
   </body>
-
-  <script>
-    // Для добавления анимаций после сброса стилей
-    window.addEventListener("load", () => {
-      document
-        .querySelectorAll("button")
-        .forEach((btn) => btn.classList.add("loaded"));
-    });
-  </script>
 </html>

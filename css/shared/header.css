@@ -1,0 +1,62 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: white;
+    height: 56px;
+    padding-top: 16px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+
+.col-xs-6.end-xs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+button {
+    all: unset;
+    box-sizing: border-box;
+
+    width: 78px;
+    height: 40px;
+
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+
+    color: black;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+
+    transition: none;
+}
+
+button.loaded {
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.2s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: auto 1px Highlight;
+    outline: auto 5px -webkit-focus-ring-color;
+}
+
+.basket {
+    margin-left: 16px;
+}
