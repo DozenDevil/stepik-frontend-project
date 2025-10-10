@@ -16,7 +16,7 @@ hr {
     width: 58.3333%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .select-wrapper {
         width: 75%;
     }
@@ -57,6 +57,10 @@ select option {
     color: black;
 }
 
+.socials {
+    margin-bottom: 40px;
+}
+
 .socials a {
     margin-right: 12px;
 }
@@ -76,11 +80,11 @@ select option {
     margin-left: -3px;
 }
 
-.col-lg-3.row {
+footer .col-lg-4.row {
     align-content: flex-start;
 }
 
-a.col-12 {
+footer a.col-12 {
     flex-basis: 100%;
     padding-bottom: 23px;
 }
@@ -93,7 +97,7 @@ a.col-12 {
     margin-right: 24px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .apps a:first-child {
         margin-right: 40px;
     }
