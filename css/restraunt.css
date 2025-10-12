@@ -30,6 +30,7 @@
 
 .banner .card .tags {
     margin-bottom: 16px;
+    flex-flow: row wrap;
 }
 
 .banner .card .tag {
@@ -52,6 +53,43 @@
     background-color: #262626;
     border-radius: 16px;
 
+    color: white;
+}
+
+.nav-bar {
+    height: 80px;
+    border-bottom: 1px solid rgb(75 75 75 / 20%);
+}
+
+.nav-bar .content.row {
+    height: 100%;
+    align-items: center;
+}
+
+.nav-bar .item {
+    padding: 10px 10px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 4px;
+    color: #626262;
+    text-decoration: none;
+}
+
+.nav-bar .item:hover {
+    background-color: #626262;
+    color: white;
+}
+
+.nav-bar .item:first-of-type {
+    margin-left: -10px;
+}
+
+.nav-bar .item.active {
+    color: #327430;
+}
+
+.nav-bar .item.active:hover {
+    background-color: #327430;
     color: white;
 }
 
@@ -87,6 +125,7 @@
     }
 
     .banner .card .time {
+        margin-left: 38px;
         margin-right: 68px;
     }
 }
