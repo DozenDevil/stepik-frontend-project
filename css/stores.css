@@ -1,3 +1,4 @@
+/* xs >= */
 input {
     all: unset;
     box-sizing: border-box;
@@ -25,29 +26,23 @@ h1 {
 }
 
 .cards {
-    margin-bottom: 64px;
+    display: grid;
+    gap: 16px 0;
+    margin-bottom: 48px;
 }
 
 .card {
-    padding-bottom: 26px;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    padding-bottom: 20px;
 
     background-color: white;
-    border-radius: 2px;
-
-    text-decoration: none;
 }
 
 .card img {
     width: 100%;
 }
 
-.card:hover {
-    padding-top: 8px;
-    margin-top: -8px;
-
-    text-decoration: none;
+.card:hover,
+.card:focus {
     background-color: #dfdfdf;
 }
 
@@ -75,4 +70,20 @@ h1 {
     margin-top: 4px;
     font-size: 13px;
     color: #1D1D1D;
+}
+
+/* md >= */
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+/* lg >= */
+@media (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 80px;
+    }
 }
