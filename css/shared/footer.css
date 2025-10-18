@@ -58,12 +58,17 @@ select option {
     color: black;
 }
 
-.socials {
-    margin-bottom: 40px;
+footer a {
+    color: white;
+    font-size: 16px;
 }
 
-.socials a {
-    margin-right: 12px;
+footer a:hover {
+    text-decoration: underline;
+}
+
+.socials {
+    margin-bottom: 40px;
 }
 
 .hashtag {
@@ -80,13 +85,10 @@ select option {
     color: white;
 }
 
-footer a {
-    color: white;
-    font-size: 16px;
-}
-
-footer a:hover {
-    text-decoration: underline;
+.socials .links {
+    display: flex;
+    justify-content: start;
+    column-gap: 12px;
 }
 
 footer .col-lg-4.row {
@@ -98,17 +100,15 @@ footer a.col-12 {
     padding-bottom: 23px;
 }
 
-.apps.row {
+.apps {
+    display: flex;
     justify-content: center;
-}
-
-.apps a:first-child {
-    margin-right: 24px;
+    column-gap: 24px;
 }
 
 @media (min-width: 992px) {
-    .apps a:first-child {
-        margin-right: 40px;
+    .apps {
+        column-gap: 40px;
     }
 }
 
