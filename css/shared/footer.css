@@ -102,8 +102,9 @@ footer a.col-12 {
 
 .apps {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 @media (min-width: 992px) {

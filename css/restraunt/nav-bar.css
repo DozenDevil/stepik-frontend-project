@@ -1,0 +1,38 @@
+.nav-bar {
+    height: 80px;
+    border-bottom: 1px solid rgb(75 75 75 / 20%);
+}
+
+.nav-bar .content.row {
+    height: 100%;
+    align-items: center;
+}
+
+.nav-bar .item {
+    padding: 10px 10px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 4px;
+    color: #626262;
+    text-decoration: none;
+}
+
+.nav-bar .item:hover,
+.nav-bar .item:focus {
+    background-color: #626262;
+    color: white;
+}
+
+.nav-bar .item:first-of-type {
+    margin-left: -10px;
+}
+
+.nav-bar .item.active {
+    color: #327430;
+}
+
+.nav-bar .item.active:hover,
+.nav-bar .item.active:focus {
+    background-color: #327430;
+    color: white;
+}

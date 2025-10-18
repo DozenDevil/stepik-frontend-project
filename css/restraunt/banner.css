@@ -1,0 +1,119 @@
+/* xs >= */
+.banner {
+    width: 100%;
+    height: 255px;
+    padding-top: 130px;
+    background-image: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 255px;
+}
+
+.banner .card {
+    background-color: white;
+    box-shadow: 0 16px 16px rgb(75 75 75 / 20%);
+    border-radius: 2px;
+}
+
+.banner .card .title {
+    padding-top: 38px;
+    padding-bottom: 40px;
+
+    color: #1D1D1D;
+    font-size: 24px;
+    text-align: center;
+}
+
+.banner .card .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .card .tags {
+    margin-bottom: 16px;
+    flex-flow: row wrap;
+}
+
+.banner .card .tag {
+    color: #626262;
+    font-size: 14px;
+}
+
+.banner .card .tag::after {
+    content: " •\00a0";
+}
+
+.banner .card .tag:last-of-type::after {
+    content: "";
+}
+
+.banner .card .time {
+    margin-bottom: 24px;
+    padding: 8px 16px;
+
+    background-color: #262626;
+    border-radius: 16px;
+
+    color: white;
+}
+
+/* md >= */
+@media (min-width: 768px) {
+    .banner {
+        padding-top: 80px;
+        background-image: url('/images/banner-md.png');
+        background-size: cover;
+    }
+
+    .banner .card {
+        min-width: 480px;
+        margin-bottom: 80px;
+    }
+
+    .banner .card .title {
+        padding-top: 38px;
+        padding-left: 48px;
+
+        font-size: 36px;
+        text-align: start;
+    }
+
+    .banner .card .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 38px;
+    }
+
+    .banner .card .tags {
+        padding-left: 48px;
+    }
+
+    .banner .card .time {
+        margin-left: 38px;
+        margin-right: 68px;
+    }
+}
+
+/* lg >= */
+@media (min-width: 992px) {
+    .banner {
+        background-image: url('/images/banner-lg.png');
+    }
+
+    .banner .card {
+        min-width: 460px;
+    }
+
+    .banner .card .title {
+        padding-top: 38px;
+        padding-left: 30px;
+    }
+
+    .banner .card .tags {
+        padding-left: 46px;
+    }
+
+    .banner .card .time {
+        margin-right: 45px;
+    }
+}
