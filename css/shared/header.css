@@ -15,7 +15,7 @@ header {
     justify-content: flex-end;
 }
 
-button {
+header button {
     all: unset;
     box-sizing: border-box;
 
@@ -36,23 +36,23 @@ button {
     transition: none;
 }
 
-button.loaded {
+header button.loaded {
     transition:
         background-color 0.2s,
         color 0.2s,
         transform 0.2s ease;
 }
 
-button:hover {
+header button:hover {
     background-color: #1D1D1D;
     color: white;
 }
 
-button:active {
+header button:active {
     transform: scale(1.05);
 }
 
-button:focus {
+header button:focus {
     outline: auto 1px Highlight;
     outline: auto 5px -webkit-focus-ring-color;
 }
