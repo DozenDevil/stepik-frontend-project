@@ -3,7 +3,7 @@
     width: 100%;
     height: 255px;
     padding-top: 130px;
-    background-image: url('/images/banner.png');
+    background-image: url('images/banner.png');
     background-repeat: no-repeat;
     background-size: 100% 255px;
 }
@@ -60,7 +60,7 @@
 @media (min-width: 768px) {
     .banner {
         padding-top: 80px;
-        background-image: url('/images/banner-md.png');
+        background-image: url('images/banner-md.png');
         background-size: cover;
     }
 
@@ -97,7 +97,7 @@
 /* lg >= */
 @media (min-width: 992px) {
     .banner {
-        background-image: url('/images/banner-lg.png');
+        background-image: url('images/banner-lg.png');
     }
 
     .banner .card {
